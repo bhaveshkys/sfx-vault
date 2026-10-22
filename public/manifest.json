@@ -1,0 +1,21 @@
+{
+  "name": "SFX Vault - Audio Browser for Premiere & After Effects",
+  "short_name": "SFX Vault",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0c10",
+  "theme_color": "#0a0c10",
+  "description": "Browse your SFX library, audition with interactive waveforms, drag into Premiere Pro & After Effects, or reveal in Finder.",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

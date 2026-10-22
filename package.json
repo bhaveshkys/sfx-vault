@@ -1,0 +1,43 @@
+{
+  "name": "sfx-vault",
+  "version": "1.0.0",
+  "description": "Professional Sound Effects Library Browser with Native Premiere & After Effects Drag-and-Drop",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev:vite": "vite",
+    "dev:electron": "wait-on tcp:5173 && electron .",
+    "dev": "concurrently -k -s first \"npm run dev:vite\" \"npm run dev:electron\"",
+    "build:vite": "vite build",
+    "build": "vite build",
+    "install:mac": "node scripts/install-mac.js",
+    "build:win": "node scripts/package-win.js"
+  },
+  "keywords": [
+    "sfx",
+    "sound-effects",
+    "audio-browser",
+    "premiere-pro",
+    "after-effects",
+    "electron"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "lucide-react": "^1.16.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "wavesurfer.js": "^7.8.15"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "cross-env": "^7.0.3",
+    "electron": "^34.2.0",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0",
+    "wait-on": "^8.0.2"
+  }
+}
